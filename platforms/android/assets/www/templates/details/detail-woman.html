@@ -1,0 +1,78 @@
+<ion-view view-title="{{woman.name}}">
+    <ion-nav-bar class="bar-stable bar-positive">
+        <ion-nav-back-button >
+        </ion-nav-back-button>
+        <ion-nav-buttons side="left">
+            <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+            </button>
+        </ion-nav-buttons>
+    </ion-nav-bar>
+  <ion-content class="detail-woman">
+  <div class="w-avatar" style="background-image: url({{woman.avatar}})">
+
+  </div>
+  <div class="content-w-info">
+      <div class="i-left card">
+          <h3 class="item item-divider">
+              <icon class="icon ion-person"></icon>
+              Características
+          </h3>
+          <p><span>Idade:</span> {{woman.age}}</p>
+          <p><span>Fala:</span> {{woman.language}}</p>
+          <p><span>Olhos:</span> {{woman.eyes}}</p>
+          <p><span>Busto:</span> {{woman.bust}}</p>
+          <p><span>Pes:</span> {{woman.feet}}</p>
+          <p><span>Altura:</span> {{woman.height}}</p>
+          <p><span>Quadril:</span> {{woman.hip}}</p>
+<!-- Atendimento  -->
+          <h3 class="item item-divider">
+              <icon class=" icon clear ion-card"></icon>
+              Atendimento
+          </h3>
+          <p><span>Local próprio:</span> {{woman.local}}</p>
+          <p><span>Horário de atendimento:</span> {{woman.timetable}}</p>
+          <p><span>Atende final de semana:</span> {{woman.weekend}}</p>
+          <p><span>Atende Mulheres:</span> {{woman.meetswoman}}</p>
+          <p><span>Atende Casais:</span> {{woman.meetscouple}}</p>
+          <p><span>Atendimento completo:</span> {{woman.full}}</p>
+<!--Local -->
+      <div class="c-left">
+           <h3 class="item item-divider">
+               <i class="icon ion-location"></i>
+               Local
+          </h3>
+           <p><span>Bairro:</span></span>{{woman.district}}</p>
+      </div>
+<!-- Contato -->
+      <div class="c-right">
+           <h3 class="item item-divider">
+               <i class="icon ion-ios-telephone"></i> 
+               Contato
+          </h3>
+           <p>
+            {{woman.contact}}
+          </p>
+      </div>
+      </div>
+  </div>
+  <div class="content-desc  card">
+       <h3 class="item item-divider">
+           {{woman.name}}
+       </h3>
+       <p>{{woman.desc}}</p>
+  </div>
+  <div class="w-algum card">
+       <h3 class="item item-divider">
+            <icon class="icon ion-images"></icon>
+           Galeria
+      </h3>
+      <ion-slide-box  on-slide-changed="slideHasChanged($index)">
+          <ion-slide ng-repeat="imgs in woman.images">
+              <div class="box-image">
+                  <img ng-src="{{imgs.image}}">
+              </div>
+          </ion-slide>
+      </ion-slide-box>
+  </div>
+  </ion-content>
+</ion-view>

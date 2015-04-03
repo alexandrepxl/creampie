@@ -1,0 +1,72 @@
+
+<ion-view view-title="Mulheres">
+    <ion-nav-bar class="bar-stable bar-positive">
+         <ion-nav-back-button side="right">
+        </ion-nav-back-button>
+        <ion-nav-buttons side="left">
+            <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+            </button>
+        </ion-nav-buttons>
+         <ion-nav-buttons side="right">
+            <a href="" ng-click="wOptions()"  class="button  button-icon ion-ios-settings iconset"></a>
+            <a href="" ng-click="wOptionsDone()" style="display:none"  class="button  button-icon ion-android-done icondone"></a>
+        </ion-nav-buttons>
+    </ion-nav-bar>
+    <div class="bar bar-subheader wSearch  button-bar-w">
+         <i class="icon ion-ios-search-strong"></i>
+         <input ng-model="query" placeholder="Busque por Nome, local, idade ...">
+        <div class="wFilter">
+        <div class="wOptions card" style="display:none">
+            <h4 class="item item-divider" style="display:none">Distância</h4>
+            <div class="range-box" style="display:none">
+                <div class="range">
+                    <i class="icon ion-volume-low"></i>
+                    <input type="range" name="volume">
+                    <i class="icon ion-volume-high"></i>
+                </div>
+            </div>
+            <h4 class="item item-divider">Perfil</h4>
+            <div class="check-item">
+                <ion-checkbox ng-model="pushMM.checked" ng-change="pushMorenasMulatas()">
+                    Morenas e Mulatas
+                </ion-checkbox>
+                <ion-checkbox ng-model="pushLR.checked" ng-change="pushLoirasRuivas()">
+                    Loiras e Ruivas
+                </ion-checkbox>
+            </div>
+            <h4 class="item item-divider">Atendimento</h4>
+            <div class="check-item">
+                <ion-checkbox ng-model="pushLocal.checked" ng-change="pushLocalProprio()">
+                    Local próprio
+                </ion-checkbox>
+                <ion-checkbox ng-model="pushFull.checked" ng-change="pushAtendFull()">
+                    Atend. completo
+                </ion-checkbox>
+                <ion-checkbox ng-model="pushMulher.checked" ng-change="pushAtendMulher()">
+                    Atend. Mulheres
+                </ion-checkbox>
+                <ion-checkbox ng-model="pushCasais.checked" ng-change="pushAtendCasais()">
+                    Atend. Casais
+                </ion-checkbox>
+            </div>
+        </div>
+    </div>
+    </div>
+<ion-content class="w-content">
+    <div class="list-woaman" >
+        <ul class="row gallery">
+            <li ng-repeat="woman in womans |  filterBy: ['perfil']: wFilter | filterBy: ['local']: wFilterLocal | filterBy: ['full']: wFilterFull | filterBy: ['meetswoman']: wFilterMulher | filterBy: ['meetscouple']: wFilterCasais | filter:query"   class="col col-50" >
+                <a  href="#/app/woman/{{woman.id}}" class="item" style="background-image: url({{woman.avatar}}) ;background-size: cover;">
+                    <div class="name">
+                        {{woman.name}}
+                    </div>
+                </a>
+                 <div class="item item-divider">
+                     <i class="icon ion-earth"></i>
+                     <span>Local:</span> {{woman.district}}
+                </div>
+            </li>
+        </ul>
+    </div>
+  </ion-content>
+</ion-view>

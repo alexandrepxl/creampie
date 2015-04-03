@@ -1,0 +1,226 @@
+/* Empty. Add your own CSS if you like */
+
+
+body{
+
+     cursor: url('http://ionicframework.com/img/finger.png'), auto;
+}
+
+html, body, #map {
+    height: 100%;
+}
+
+
+
+.menu .bar-header {
+    height: 120px;
+    background: url('../img/bg_menu.png');
+    background-position: -7px 0
+}
+
+.menu-header{
+    margin-top: 74px;
+}
+
+/* Busca lista mulheres */
+.search{
+    padding: 5px;
+    text-align: right;
+}
+
+.search input{
+
+    border: none;
+}
+
+
+/* Bar */
+
+.bar.bar-stable{
+
+    border-color:#911b42;
+    background-color: #941e43;
+}
+
+/* Esconde o scrollbar no menu left*/ 
+.scroll-bar-v {
+
+    display: none;
+}
+
+
+
+.gallery {
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+
+/* Lista tela woamans*/
+
+.w-content{
+
+    top: 85px;
+}
+
+
+.list-woaman .gallery .name{
+
+    color: #FFF;
+    font-weight: 800
+}
+
+.list-woaman .gallery li a{
+
+    background-repeat: no-repeat;
+    height: 130px;
+}
+
+.list-woaman .gallery .item.activated{
+
+    opacity: 0.7;
+}
+
+.list-woaman .item-divider {
+
+    font-size: 13px;
+}
+
+.list-woaman .item-divider span{
+
+    font-weight: 800
+}
+
+
+/* MENU */
+.list .item-divider{
+
+     background-color: #941e43;
+}
+
+.list .item-divider{
+
+    color: #FFF;
+}
+
+
+/* Css tela de detail mulheres*/
+
+.w-avatar{
+
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 160px;
+    background-size: cover;
+    background-position: 0px -40px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.detail-woman h3{
+
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #555555;
+    margin-bottom: 7px
+}
+
+.detail-woman p{
+  
+    padding: 0 0 0 15px 
+}
+
+.detail-woman p span{ 
+
+    font-weight: 600;
+    color: #555555;
+    padding: 0 4px 0 0;
+
+}
+
+.content-w-info{
+    overflow: hidden;
+}
+
+.content-w-info h3{
+     
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #555555;
+    margin-bottom: 7px
+}
+
+.w-algum h3 {
+
+    margin: 0;
+}
+
+.box-image img{
+
+    width: 100%;
+}
+
+/* Busca worman  */
+
+.wFilter{
+
+    position: absolute;
+    top: 23px
+
+}
+
+.button-bar-w{
+
+    text-align: right;
+    padding: 8px 12px 0 0
+}
+
+.wSearch input{
+   
+    width: 230px;
+    height: 30px;
+    padding: 0 0 0 5px;
+    background: #f6f6f6;
+    border: solid 1px #cccccc;
+}
+
+.c-right p .icon{
+
+    padding: 0 5px 0 0;
+}
+
+
+/* */
+
+.check-item .item{
+    float: left;
+    border: none;
+    width: 170px;
+    font-size: 13px;
+    text-align: left;
+}
+
+
+
+.wOptions  h4{
+    
+    margin-bottom: 2px;
+}
+
+
+.check-item .item-checkbox {
+    padding-left: 46px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
