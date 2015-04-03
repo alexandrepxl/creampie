@@ -60,12 +60,12 @@ creampie.config(function($stateProvider, $urlRouterProvider) {
         }
       }
     })
-    .state('app.homens', {
-      url: "/homens",
+    .state('app.favoritos', {
+      url: "/favoritos",
       views: {
         'menuContent': {
-          templateUrl: "templates/homens.html",
-          controller: 'WomansCtrl'
+          templateUrl: "templates/favoritos.html",
+          controller: 'FavoritosCtrl'
         }
       }
     })

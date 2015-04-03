@@ -33,6 +33,30 @@ html, body, #map {
     border: none;
 }
 
+/* Menu Header */
+
+.menu-avatar .item {
+
+    border: none;
+    background: none;
+    margin: 45px 0 0 0;
+}
+
+.menu-avatar .item h2{
+    color: #FFF;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 6px 0 0 -5px;
+}
+
+.menu-avatar .item p{
+    color: #FFF;
+    margin: -2px 0 0 -5px;
+    font-size: 12px;
+   
+}
+
+
 
 /* Bar */
 
@@ -167,7 +191,10 @@ html, body, #map {
 
     position: absolute;
     top: 23px
+}
 
+.wFilter h4{
+    text-align: left;
 }
 
 .button-bar-w{

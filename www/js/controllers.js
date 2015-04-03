@@ -39,7 +39,7 @@ creampie.controller('AppCtrl', function($scope, $ionicModal, $timeout) {
 
 creampie.controller('WomansCtrl', function($scope, WomansService) {
 
-  
+
    $scope.womans = WomansService.all();
     
   // Variáveis de escopo filtro mulheres
@@ -122,6 +122,15 @@ creampie.controller('WomansCtrl', function($scope, WomansService) {
        
       startFilter();
    };
+    
+    
+    // Refrech 
+    
+    $scope.doRefresh = function() {
+    $scope.womans =  WomansService.all();
+    $scope.$broadcast('scroll.refreshComplete');
+    $scope.$apply()
+  };
 
 
 });
@@ -259,6 +268,11 @@ $scope.initialize = function() {
         
   }    
     
+});
+
+// Meus favoritos
+creampie.controller('FavoritosCtrl',function($scope){
+
 });
 
 

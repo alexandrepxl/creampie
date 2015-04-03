@@ -33,6 +33,21 @@ html, body, #map {
     border: none;
 }
 
+/* Menu Header */
+
+.menu-avatar .item {
+
+    border: none;
+    background: none;
+    margin: 45px 0 0 0;
+}
+
+.menu-avatar .item h2{
+    color: #FFF;
+    font-size: 13px;
+}
+
+
 
 /* Bar */
 
